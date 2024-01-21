@@ -16,7 +16,7 @@ var heartData = require("Storage").open("stresslessheartratelog.csv","a");
 function timeConverter(UNIX_timestamp){
 // Create a new JavaScript Date object based on the timestamp
 // multiplied by 1000 so that the argument is in milliseconds, not seconds
-var date = new Date(unix_timestamp * 1000);
+var date = new Date(UNIX_timestamp * 1000);
   var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
   var year = date.getFullYear();
