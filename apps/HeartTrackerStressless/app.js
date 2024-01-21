@@ -8,7 +8,7 @@ setInterval(function() {
 
 Bangle.setHRMPower(1);
 
-var heartData = require("Storage").open("stresslessheartlog.csv","a");
+var heartData = require("Storage").open("stresslessheartratelog.csv","a");
 
 Bangle.on('HRM',function(hrm) {
     var d = [
