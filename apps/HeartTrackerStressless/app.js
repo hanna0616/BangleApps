@@ -4,7 +4,7 @@ E.showMessage("recording heart rate");
 setInterval(function() {
   on = !on;
   LED2.write(on);
-}, 500);
+}, 1000);
 
 Bangle.setHRMPower(1);
 
