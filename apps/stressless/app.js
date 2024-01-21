@@ -12,7 +12,7 @@ var heartData = require("Storage").open("stresslessheartratelog.csv","a");
 
 
 
-
+/*
 function timeConverter(UNIX_timestamp){
 // Create a new JavaScript Date object based on the timestamp
 // multiplied by 1000 so that the argument is in milliseconds, not seconds
@@ -33,11 +33,11 @@ var minutes = "0" + date.getMinutes();
 var seconds = "0" + date.getSeconds();
 
 var formattedTime = year + month+ day + hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-}
+}*/
 Bangle.on('HRM',function(hrm) {
     var d = [
       "HeartRate",
-       0|timeConverter(getTime()), // Time to the nearest second
+       0|getTime(), // Time to the nearest second
       hrm.bpm,
       hrm.confidence
       ];
