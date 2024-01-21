@@ -12,7 +12,7 @@ var heartData = require("Storage").open("stresslessheartlog.csv","a");
 
 Bangle.on('HRM',function(hrm) {
     var d = [
-      "H",
+      "HeartRate",
        0|getTime(), // Time to the nearest second
       hrm.bpm,
       hrm.confidence
