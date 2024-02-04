@@ -1,4 +1,4 @@
-
+WIDGETS = {}; 
   let batteryInterval = Bangle.isLCDOn() ? setInterval(()=>WIDGETS["bat"].draw(), 60000) : undefined;
   Bangle.on('lcdPower', function(on) {
     if (on) {
